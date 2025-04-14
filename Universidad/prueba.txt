@@ -1,0 +1,11 @@
+Profesor: Oscar T
+Alumno:  
+Tipo de evaluación: Control
+Ponderación: 10
+Nota: 0
+Número de preguntas por sección:
+Sección 1: 1
+Sección 2: 1
+Sección 3: 1
+Preguntas:
+1. 2. 3. 
