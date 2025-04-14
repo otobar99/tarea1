@@ -1,6 +1,11 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#ifdef _WIN32
+#include <windows.h>
+#include <fcntl.h>
+#include <io.h>
+#endif
 
 #include "Asignatura.h"
 #include "Profesor.h"
@@ -13,6 +18,11 @@
 #include "Universidad.h"
 
 int main() {
+#ifdef _WIN32
+    // Configurar la consola como utf-8 en windows
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+#endif
     Universidad universidad;
     int opcion = 3;
     string r;
