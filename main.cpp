@@ -67,6 +67,13 @@ int main() {
                 evaluacion.leerEvaluacion();
             }
         }
+        cout << "Desea realizar otra accion?" << endl;
+        int continuar;
+        cout << "1. Si\n2. No" << endl;
+        cin >> continuar;
+        if (continuar == 2) {
+            return 0;
+        }
     }
     return 0;
 }
