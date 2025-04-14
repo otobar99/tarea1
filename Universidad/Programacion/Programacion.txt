@@ -1,0 +1,175 @@
+30
+1
+2021
+1
+Describe qué es una variable en programación.
+30
+5
+
+2
+2022
+2
+Un bucle "while" se ejecuta mientras la condición sea verdadera.
+15
+3
+
+3
+2023
+3
+¿Cuál es el objetivo principal de un "if-else" en programación?
+25
+6
+3
+Tomar decisiones
+Definir variables
+Crear bucles
+
+1
+2020
+1
+Explica el concepto de "función" en programación.
+40
+8
+
+2
+2021
+2
+Un "array" es una estructura de datos que almacena elementos del mismo tipo.
+10
+2
+
+3
+2023
+3
+¿Cuál es el lenguaje más adecuado para desarrollo web?
+30
+7
+3
+Python
+HTML
+C++
+
+1
+2019
+1
+Describe qué es un "algoritmo".
+50
+9
+
+2
+2020
+2
+La programación orientada a objetos se basa en el uso de clases y objetos.
+20
+4
+
+3
+2022
+3
+¿Qué palabra clave se utiliza para declarar una variable en Python?
+20
+4
+3
+var
+let
+No necesita palabra clave
+
+1
+2023
+1
+Explica la diferencia entre "for" y "while".
+45
+7
+
+2
+2021
+2
+Un "stack" (pila) sigue la regla LIFO (Last In, First Out).
+15
+3
+
+3
+2020
+3
+¿Cuál es el operador lógico que representa "Y" en programación?
+30
+6
+3
+&&
+||
+!=
+
+1
+2022
+1
+Describe qué es una "base de datos relacional".
+60
+9
+
+2
+2020
+2
+El lenguaje SQL se utiliza para interactuar con bases de datos.
+10
+2
+
+3
+2023
+3
+¿Cuál es el resultado de 10 % 3 en programación?
+25
+5
+3
+1
+3
+0
+
+1
+2019
+1
+Explica el propósito de una estructura de control "switch".
+50
+7
+
+2
+2022
+2
+Los comentarios en Python comienzan con el carácter "#".
+10
+2
+
+3
+2023
+3
+¿Qué tipo de dato usarías para almacenar "verdadero" o "falso" en programación?
+20
+5
+3
+Boolean
+String
+Integer
+
+1
+2020
+1
+Describe cómo se gestiona la memoria dinámica en programación.
+55
+8
+
+2
+2022
+2
+Un "hashmap" asocia claves con valores.
+15
+3
+
+3
+2021
+3
+¿Qué representa "null" en programación?
+30
+6
+3
+Un error
+Una referencia vacía
+Una cadena de texto

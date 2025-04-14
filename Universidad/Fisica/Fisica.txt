@@ -1,0 +1,232 @@
+30
+2
+2022
+2
+La velocidad se mide en m/s.
+10
+2
+
+1
+2021
+1
+Define qué es un vector en física.
+40
+8
+
+3
+2023
+3
+¿Cuál de las siguientes es una unidad de energía?
+25
+5
+3
+Newton
+Joule
+Pascal
+
+2
+2020
+2
+La aceleración debida a la gravedad en la Tierra es aproximadamente 9.8 m/s².
+15
+3
+
+1
+2019
+1
+Explica el concepto de inercia según la primera ley de Newton.
+50
+9
+
+3
+2021
+3
+¿Cuál es la fórmula de la fuerza?
+20
+4
+3
+F = ma
+F = mv
+F = m/g
+
+2
+2023
+2
+La masa de un objeto cambia según su ubicación en el universo.
+10
+3
+
+3
+2022
+3
+¿Cuál es el valor de la constante gravitacional G?
+30
+6
+3
+6.67 × 10⁻¹¹ N·m²/kg²
+9.8 m/s²
+3 × 10⁸ m/s
+
+1
+2020
+1
+Describe qué es el momento lineal de un objeto.
+45
+8
+
+2
+2021
+2
+Un objeto en reposo tiene energía cinética.
+10
+2
+
+3
+2023
+3
+¿Cuál de las siguientes magnitudes es un vector?
+25
+5
+3
+Velocidad
+Temperatura
+Energía
+
+1
+2019
+1
+Explica qué es el trabajo mecánico en física.
+50
+9
+
+2
+2020
+2
+La fuerza y la aceleración son proporcionales.
+15
+3
+
+3
+2023
+3
+¿Cuál es la fórmula de la energía cinética?
+35
+6
+3
+E = 1/2 mv²
+E = mgh
+E = mc²
+
+1
+2022
+1
+Describe el principio de conservación de la energía.
+60
+10
+
+2
+2021
+2
+El sonido se propaga más rápido en líquidos que en gases.
+15
+3
+
+3
+2020
+3
+¿Qué partículas forman un átomo?
+30
+5
+3
+Protones, neutrones y electrones
+Quarks y leptones
+Fotones y bosones
+
+2
+2023
+2
+La luz es una onda electromagnética.
+10
+3
+
+1
+2022
+1
+Explica la diferencia entre calor y temperatura.
+55
+9
+
+3
+2021
+3
+¿Cuál es la fórmula de la Ley de Coulomb?
+40
+7
+3
+F = k q₁q₂ / r²
+F = ma
+F = mgh
+
+2
+2020
+2
+El tiempo es una magnitud escalar.
+10
+2
+
+1
+2019
+1
+Describe cómo se mide la presión en física.
+50
+8
+
+3
+2022
+3
+¿Cuál es la velocidad de la luz en el vacío?
+25
+5
+3
+3 × 10⁸ m/s
+9.8 m/s²
+6.67 × 10⁻¹¹ N·m²/kg²
+
+1
+2020
+1
+Explica el concepto de energía potencial.
+45
+7
+
+2
+2023
+2
+El peso de un objeto se mide en Newtons.
+10
+2
+
+3
+2021
+3
+¿Cuál es la unidad de frecuencia en el Sistema Internacional?
+20
+4
+3
+Hertz
+Voltio
+Newton
+
+1
+2020
+1
+Define el término "impulso" en física.
+50
+9
+
+2
+2022
+2
+El calor se transfiere por conducción, convección y radiación.
+15
+3

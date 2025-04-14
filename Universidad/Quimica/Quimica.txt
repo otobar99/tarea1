@@ -1,0 +1,200 @@
+30
+3
+2023
+1
+¿Cuál es el símbolo químico del carbono?
+15
+3
+3
+C
+Ca
+Co
+
+1
+2020
+1
+Describe qué es un enlace covalente.
+50
+7
+
+2
+2022
+2
+La molécula de agua tiene una forma angular.
+15
+3
+
+3
+2023
+3
+¿Qué tipo de compuesto es NaCl?
+25
+5
+3
+Orgánico
+Iónico
+Covalente
+
+1
+2019
+1
+Explica el concepto de pH.
+40
+8
+
+2
+2021
+2
+El oxígeno es un elemento esencial para la respiración celular.
+10
+3
+
+3
+2020
+3
+¿Cuál es la fórmula química del ácido sulfúrico?
+30
+6
+3
+H2SO4
+HCl
+NaOH
+
+1
+2022
+1
+Describe la diferencia entre un elemento y un compuesto.
+55
+9
+
+2
+2023
+2
+Los enlaces iónicos se forman por la transferencia de electrones.
+15
+3
+
+3
+2021
+3
+¿Cuál es la unidad de concentración molar?
+20
+4
+3
+Mol/L
+g/L
+mg/L
+
+1
+2020
+1
+Explica qué son los isotopos.
+60
+10
+
+2
+2022
+2
+Un catalizador acelera una reacción química sin consumirse.
+10
+2
+
+3
+2023
+3
+¿Cuál es la masa molar del agua (H2O)?
+25
+5
+3
+18 g/mol
+36 g/mol
+54 g/mol
+
+1
+2019
+1
+Describe qué es una reacción exotérmica.
+50
+8
+
+2
+2020
+2
+El dióxido de carbono es un gas de efecto invernadero.
+10
+2
+
+3
+2021
+3
+¿Cuál es el nombre común del HCl?
+20
+4
+3
+Ácido clorhídrico
+Ácido sulfúrico
+Ácido nítrico
+
+1
+2020
+1
+Explica la diferencia entre disolución y suspensión.
+50
+7
+
+2
+2022
+2
+La sal común se forma por la reacción de un ácido y una base.
+10
+2
+
+3
+2023
+3
+¿Cuál es el número de electrones en el sodio (Na)?
+30
+6
+3
+11
+12
+23
+
+1
+2021
+1
+Describe qué es una base fuerte en química.
+55
+9
+
+2
+2020
+2
+El metano es un compuesto orgánico.
+10
+3
+
+3
+2022
+3
+¿Cuál es el compuesto químico de la glucosa?
+25
+5
+3
+C6H12O6
+C12H22O11
+CH4
+
+1
+2019
+1
+Explica qué ocurre en una reacción redox.
+60
+10
+
+2
+2023
+2
+Los hidrocarburos contienen únicamente carbono e hidrógeno.
+15
+3

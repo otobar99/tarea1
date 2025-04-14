@@ -1,0 +1,247 @@
+30
+3
+2023
+2
+¿Cuál es el resultado de 3x + 2 = 8?
+30
+5
+3
+x = 2
+x = 3
+x = 5
+
+1
+2022
+1
+Define la propiedad distributiva de la multiplicación.
+45
+7
+
+2
+2021
+2
+La raíz cuadrada de 16 es un número par.
+15
+3
+
+3
+2020
+3
+¿Cuál es el producto de (x+2)(x-2)?
+30
+5
+3
+x^2 - 4
+x^2 + 4
+x^2 - 2
+
+1
+2023
+1
+Explica qué es un número racional.
+50
+8
+
+2
+2020
+2
+Un número primo tiene exactamente dos divisores.
+20
+4
+
+3
+2021
+3
+¿Cuál es la derivada de f(x) = x^2 + 3x?
+40
+6
+3
+f'(x) = 2x + 3
+f'(x) = x^3
+f'(x) = 2x - 3
+
+1
+2022
+1
+¿Qué representa el símbolo ∑ en matemáticas?
+45
+7
+
+2
+2023
+2
+El perímetro de un círculo se calcula con la fórmula 2πr.
+25
+4
+
+3
+2019
+3
+¿Cuál es el área de un triángulo con base 6 cm y altura 4 cm?
+35
+6
+3
+12 cm²
+24 cm²
+18 cm²
+
+1
+2020
+1
+Describe el concepto de número irracional.
+50
+8
+
+2
+2022
+2
+Pi (π) es un número racional.
+20
+3
+
+3
+2023
+3
+¿Cuántos lados tiene un decágono?
+15
+5
+3
+8
+10
+12
+
+1
+2021
+1
+Explica el teorema de Pitágoras.
+60
+9
+
+2
+2020
+2
+Un cuadrado tiene todos sus lados iguales.
+10
+2
+
+3
+2023
+3
+¿Cuál es el valor de log10(100)?
+25
+4
+3
+1
+2
+3
+
+3
+2021
+3
+¿Cuál es la suma de los primeros 10 números naturales?
+20
+5
+3
+45
+55
+65
+
+1
+2020
+1
+Define un número perfecto en matemáticas.
+40
+8
+
+2
+2022
+2
+Cualquier número multiplicado por cero es igual a cero.
+10
+2
+
+3
+2023
+3
+¿Cuál es el resultado de 5! (5 factorial)?
+30
+6
+3
+120
+60
+24
+
+1
+2019
+1
+Explica la diferencia entre múltiplo y divisor.
+45
+7
+
+2
+2021
+2
+La suma de los ángulos internos de un triángulo es 180 grados.
+15
+3
+
+3
+2023
+3
+¿Cuál es el área de un círculo con radio 5 cm?
+35
+6
+3
+25π cm²
+50π cm²
+75π cm²
+
+1
+2020
+1
+Describe cómo resolver una ecuación cuadrática.
+60
+9
+
+2
+2022
+2
+Un trapecio tiene dos lados paralelos.
+20
+4
+
+3
+2021
+3
+¿Cuál es el valor aproximado de π?
+15
+3
+3
+3.1416
+2.7183
+1.6180
+
+1
+2023
+1
+Explica qué es una función lineal.
+50
+8
+
+2
+2020
+2
+Un polígono regular tiene todos sus lados iguales.
+15
+3
+
+3
+2021
+3
+¿Cuál es el tercer término de la sucesión de Fibonacci?
+25
+4
+3
+1
+2
+3
