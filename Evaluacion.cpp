@@ -222,8 +222,37 @@ void Evaluacion::crearEvaluacion(string asignatura, string profesor) {
         this->tiempo += listaPreguntas[i]->getTiempo();
         listaPreguntas[i]->mostrarPregunta();
     }
+    guardarEvaluacion();
     imprimirEvaluacion();
 }
+
+void Evaluacion::guardarEvaluacion()
+{
+    ofstream cout("Universidad/prueba.txt", std::ios::out | std::ios::app); // write & append
+    cout << "Profesor: " << profesor << "\n";
+    cout << "Alumno: " << alumno << "\n";
+    cout << "Tipo de evaluación: " << tipoEvaluacion << "\n";
+    cout << "Ponderación: " << ponderacion << "\n";
+    cout << "Nota: " << nota << "\n";
+    cout << "Número de preguntas por sección:\n";
+    cout << "Sección 1: " << n_preguntas[0] << "\n";
+    cout << "Sección 2: " << n_preguntas[1] << "\n";
+    cout << "Sección 3: " << n_preguntas[2] << "\n";
+    cout << "Preguntas:\n";
+    if (listaPreguntas != nullptr) {
+        for (int i = 0; i < n_preguntas[0] + n_preguntas[1] + n_preguntas[2]; ++i) {
+            cout << i + 1 << ". ";
+            if (listaPreguntas[i] != nullptr) {
+                listaPreguntas[i]->imprimirPregunta();
+            } else {
+                cout << "Pregunta no disponible.\n";
+            }
+        }
+    } else {
+        cout << "No hay preguntas en esta evaluación.\n";
+    }
+}
+
 void Evaluacion::editarEvaluacion(){
     cout << "Que desea editar: \n1. tipo de evaluacion\n2. ponderacion\n3. pregunta\n";
     int opcion;

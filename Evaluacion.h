@@ -53,6 +53,7 @@ public:
     void mostrarEvaluacion();
     void leerEvaluacion();
     void crearEvaluacion(string asignatura, string profesor);
+    void guardarEvaluacion();
     void editarEvaluacion();
     void realizarEvaluacion(string rut, string alumno);
     void revisarEvaluacion();
