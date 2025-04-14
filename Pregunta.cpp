@@ -206,7 +206,7 @@ void Pregunta::buscarPregunta(const string& asignatura, int nivel) {
     while (getline(archivo, linea)) {
         try {
             int tipo = stoi(linea);
-            if (true) {
+            if (tipo == 3) {
                 getline(archivo, linea);
                 if(2025 - stoi(linea) >= 2) {
                     getline(archivo, linea);
