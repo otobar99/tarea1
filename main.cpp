@@ -51,7 +51,8 @@ int main() {
             int asignaturaIndex;
             cin >> asignaturaIndex;
             cout << "Que desea hacer?" << endl;
-            cout << "1. Crear evaluacion\n2. Revisar evaluacion\n3. Editar evaluacion\n" << endl;
+            cout << "1. Crear evaluacion\n2. Revisar evaluacion\n3. Editar evaluacion" << endl;
+            cout << "4. Leer evaluacion" << endl;
             int accion;
             cin >> accion;
             Evaluacion evaluacion = Evaluacion();
@@ -61,6 +62,9 @@ int main() {
                 cout << "Ingrese el nombre de la evaluacion que desea revisar: " << endl;
             } else if (accion == 3){
                 cout << "Ingrese el nombre de la evaluacion que desea editar: " << endl;
+            } else if (accion == 4) {
+                cout << "Leyendo evaluacion:" << endl;
+                evaluacion.leerEvaluacion();
             }
         }
     }

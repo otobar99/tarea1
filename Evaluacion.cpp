@@ -162,6 +162,19 @@ Evaluacion::~Evaluacion() {
 }
 
 void Evaluacion::leerEvaluacion(){
+    std::ifstream eval("Universidad/prueba.txt");
+
+    if (!eval.is_open()) {
+        std::cerr << "Error abriendo archivo." << std::endl;
+        return;
+    }
+
+    std::string line;
+    while (std::getline(eval, line)) {
+        std::cout << line << std::endl;
+    }
+
+    eval.close();
     return;
 }
 void Evaluacion::crearEvaluacion(string asignatura, string profesor) {
