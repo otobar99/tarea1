@@ -20,7 +20,7 @@ void P_VF::setJustificado(const string& justificado) {
 
 // Métodos específicos
 void P_VF::imprimirPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "Justificado: " << justificado << "\n";
 }
 
@@ -29,19 +29,19 @@ P_VF::~P_VF() {
 }
 
 void P_VF::mostrarPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Justificado: " << justificado << "\n";
 }
 
 void P_VF::leerPregunta(ifstream& archivo){
-    leerPregunta(archivo);
+    Pregunta::leerPregunta(archivo);
     string linea;
     getline(archivo, linea);
     setJustificado(linea);
 }
 
 void P_VF::revisarPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "¿Es correcta? (1: Sí, 0: No): ";
     int respuestaCorrecta;
     cin >> respuestaCorrecta;
@@ -53,7 +53,7 @@ void P_VF::revisarPregunta(){
 }
 
 void P_VF::responderPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Ingrese su respuesta (V/F): ";
     string respuestaUsuario;
     cin.ignore();
@@ -71,7 +71,7 @@ void P_VF::responderPregunta(){
 }
 
 void P_VF::editarPregunta(){
-    editarPregunta();
+    Pregunta::editarPregunta();
     switch (getTaxonomia()) {
         case 1:
             setTiempo(20);
@@ -95,7 +95,7 @@ void P_VF::editarPregunta(){
 }
 
 void P_VF::crearPregunta(){
-    crearPregunta();
+    Pregunta::crearPregunta();
     switch (getTaxonomia()) {
         case 1:
             setTiempo(20);

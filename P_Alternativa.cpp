@@ -67,7 +67,7 @@ P_Alternativa::~P_Alternativa() {
 }
 
 void P_Alternativa::imprimirPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "Alternativas:\n";
     for (int i = 0; i < cantidadAlternativas; ++i) {
         cout << i + 1 << ". " << alternativas[i] << "\n";
@@ -75,7 +75,7 @@ void P_Alternativa::imprimirPregunta(){
 }
 
 void P_Alternativa::mostrarPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Alternativas:\n";
     for (int i = 0; i < cantidadAlternativas; ++i) {
         cout << i + 1 << ". " << alternativas[i] << "\n";
@@ -83,7 +83,7 @@ void P_Alternativa::mostrarPregunta(){
 }
 
 void P_Alternativa::leerPregunta(ifstream& archivo){
-    leerPregunta(archivo);
+    Pregunta::leerPregunta(archivo);
     archivo >> cantidadAlternativas;
     delete[] alternativas;
     alternativas = new string[cantidadAlternativas];
@@ -192,7 +192,7 @@ void P_Alternativa::responderPregunta(){
 }
 
 void P_Alternativa::crearPregunta(){
-    crearPregunta();
+    Pregunta::crearPregunta();
     cout << "Ingrese la cantidad de alternativas: ";
     int cantidadAlternativas;
     cin >> cantidadAlternativas;
