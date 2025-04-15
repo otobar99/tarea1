@@ -43,7 +43,7 @@ public:
     void setPonderacion(int ponderacion);
     void setNota(float nota);
     void setNPreguntas(int index, int valor); // Modifica un valor específico de la lista
-    void agregarPregunta(Pregunta* pregunta, int indice);
+    void agregarPregunta();
     void eliminarPregunta(int indice);
     void imprimirEvaluacion() const;
 
@@ -51,9 +51,9 @@ public:
     ~Evaluacion();
 
     void mostrarEvaluacion();
-    void leerEvaluacion();
+    void leerEvaluacion(string nombreArchivo);
     void crearEvaluacion(string asignatura, string profesor);
-    void guardarEvaluacion();
+    void guardarEvaluacion(string asignatura);
     void editarEvaluacion();
     void realizarEvaluacion(string rut, string alumno);
     void revisarEvaluacion();

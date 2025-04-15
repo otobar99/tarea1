@@ -26,14 +26,15 @@ public:
     // Destructor
     ~P_VF();
 
-    void imprimirPregunta();
-    void mostrarPregunta();
-    void leerPregunta(ifstream& archivo);
-    void revisarPregunta();
-    void responderPregunta();
-    void editarPregunta();
-    void crearPregunta();
-    void buscarPregunta(const string& asignatura, int nivel);
+    void imprimirPregunta() override;
+    void mostrarPregunta() override;
+    void leerPregunta(ifstream& archivo) override;
+    void revisarPregunta() override;
+    void responderPregunta() override;
+    void editarPregunta() override;
+    void crearPregunta() override;
+    void buscarPregunta(const string& asignatura, int nivel) override;
+    void guardarPregunta(ofstream& archivo) override;
 };
 
 #endif

@@ -78,17 +78,30 @@ void Evaluacion::setNPreguntas(int index, int valor) {
     }
 }
 
-void Evaluacion::agregarPregunta(Pregunta* pregunta, int indice) {
-    if (indice >= 0 && indice < n_preguntas[0] + n_preguntas[1] + n_preguntas[2] && listaPreguntas != nullptr) {
-        // Liberar la memoria de la pregunta existente en el índice (si la hay)
-        if (listaPreguntas[indice] != nullptr) {
-            delete listaPreguntas[indice];
-        }
-
-        // Asignar la nueva pregunta
-        listaPreguntas[indice] = pregunta;
-    } else {
-        cout << "Índice fuera de rango o lista de preguntas no inicializada.\n";
+void Evaluacion::agregarPregunta() {
+    cout << "Ingrese el tipo de pregunta: \n1. Verdadero o Falso\n2. Alternativa\n3. Respuesta Corta\n";
+    int tipoPregunta;
+    cin >> tipoPregunta;
+    Pregunta** nuevaLista = new Pregunta*[n_preguntas[0] + n_preguntas[1] + n_preguntas[2] + 1];
+    cout << "1. Crear pregunta\n2. Aleatorio\n";
+    int opcion;
+    cin >> opcion;
+    switch (opcion) {
+        case 1:
+            if (tipoPregunta == 1) {
+                listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]] = new P_VF();
+                listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]]->crearPregunta();
+                nuevaLista[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]] = listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]];
+                n_preguntas[0]++;
+            } else if (tipoPregunta == 2) {
+                listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]] = new P_Alternativa();
+                listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]]->crearPregunta();
+                nuevaLista[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]] = listaPreguntas[n_preguntas[0] + n_preguntas[1] + n_preguntas[2]];
+                n_preguntas[1]++;
+            } else {
+                cout << "Tipo de pregunta no válido.\n";
+            }
+            break;
     }
 }
 
@@ -161,19 +174,33 @@ Evaluacion::~Evaluacion() {
     }
 }
 
-void Evaluacion::leerEvaluacion(){
-    std::ifstream eval("Universidad/prueba.txt");
+void Evaluacion::leerEvaluacion(string nombreArchivo) {
+    ifstream eval(nombreArchivo);
 
     if (!eval.is_open()) {
-        std::cerr << "Error abriendo archivo." << std::endl;
+        cerr << "Error abriendo archivo." << std::endl;
         return;
     }
 
-    std::string line;
-    while (std::getline(eval, line)) {
-        std::cout << line << std::endl;
+    string linea;
+    getline(eval, profesor);
+    getline(eval, alumno);
+    getline(eval, tipoEvaluacion);
+    eval >> ponderacion;
+    eval >> nota;
+    eval >> n_preguntas[0];
+    eval >> n_preguntas[1];
+    eval >> n_preguntas[2];
+    for(int i = 0; i < n_preguntas[0] + n_preguntas[1] + n_preguntas[2]; ++i) {
+        if (i < n_preguntas[0]) {
+            listaPreguntas[i] = new P_VF();
+        } else if (i < n_preguntas[0] + n_preguntas[1]) {
+            listaPreguntas[i] = new P_Alternativa();
+        } else {
+            listaPreguntas[i] = new Pregunta();
+        }
+        listaPreguntas[i]->leerPregunta(eval);
     }
-
     eval.close();
     return;
 }
@@ -230,33 +257,35 @@ void Evaluacion::crearEvaluacion(string asignatura, string profesor) {
             int nivel;
             cin >> nivel;
             listaPreguntas[i]->buscarPregunta(asignatura, nivel);
+            if (listaPreguntas[i]->getEnunciado() == " ") {
+                cout << "No se encontró una pregunta adecuada.\n";
+                i--;
+                continue;
+            }
         }
 
         this->tiempo += listaPreguntas[i]->getTiempo();
         listaPreguntas[i]->mostrarPregunta();
     }
-    guardarEvaluacion();
+    guardarEvaluacion(asignatura);
     imprimirEvaluacion();
 }
 
-void Evaluacion::guardarEvaluacion()
-{
-    ofstream cout("Universidad/prueba.txt", std::ios::out | std::ios::app); // write & append
-    cout << "Profesor: " << profesor << "\n";
-    cout << "Alumno: " << alumno << "\n";
-    cout << "Tipo de evaluación: " << tipoEvaluacion << "\n";
-    cout << "Ponderación: " << ponderacion << "\n";
-    cout << "Nota: " << nota << "\n";
-    cout << "Número de preguntas por sección:\n";
-    cout << "Sección 1: " << n_preguntas[0] << "\n";
-    cout << "Sección 2: " << n_preguntas[1] << "\n";
-    cout << "Sección 3: " << n_preguntas[2] << "\n";
-    cout << "Preguntas:\n";
+void Evaluacion::guardarEvaluacion(string asignatura){
+    ofstream archivo("Universidad/"+asignatura+"/"+getTipoEvaluacion()+".txt", std::ios::out | std::ios::app); // write & append
+    archivo << profesor << "\n";
+    archivo << alumno << "\n";
+    archivo << tipoEvaluacion << "\n";
+    archivo << ponderacion << "\n";
+    archivo << nota << "\n";
+    archivo << n_preguntas[0] << "\n";
+    archivo << n_preguntas[1] << "\n";
+    archivo << n_preguntas[2] << "\n";
     if (listaPreguntas != nullptr) {
         for (int i = 0; i < n_preguntas[0] + n_preguntas[1] + n_preguntas[2]; ++i) {
             cout << i + 1 << ". ";
             if (listaPreguntas[i] != nullptr) {
-                listaPreguntas[i]->imprimirPregunta();
+                listaPreguntas[i]->guardarPregunta(archivo);
             } else {
                 cout << "Pregunta no disponible.\n";
             }
@@ -267,26 +296,48 @@ void Evaluacion::guardarEvaluacion()
 }
 
 void Evaluacion::editarEvaluacion(){
-    cout << "Que desea editar: \n1. tipo de evaluacion\n2. ponderacion\n3. pregunta\n";
-    int opcion;
-    cin >> opcion;
-    switch (opcion) {
-        case 1:
-            cout << "Ingrese el nuevo tipo de evaluacion: ";
-            cin >> tipoEvaluacion;
-            break;
-        case 2:
-            cout << "Ingrese la nueva ponderacion: ";
-            cin >> ponderacion;
-            break;
-        case 3:
-            cout << "Ingrese el numero de la pregunta que desea editar: ";
-            int numPregunta;
-            cin >> numPregunta;
-            listaPreguntas[numPregunta]->editarPregunta();
-            break;
+    int opcion = -1;
+    while (opcion != 0) {
+        cout << "Que desea editar: \n1. tipo de evaluacion\n2. ponderacion\n3. pregunta\n4. Agregar pregunta\n0. Salir\n";
+        cin >> opcion;
+        switch (opcion) {
+            case 1:
+                cout << "Ingrese el nuevo tipo de evaluacion: ";
+                cin >> tipoEvaluacion;
+                break;
+            case 2:
+                cout << "Ingrese la nueva ponderacion: ";
+                cin >> ponderacion;
+                break;
+            case 3:{
+                cout << "Ingrese el numero de la pregunta que desea editar: ";
+                int numPregunta;
+                cin >> numPregunta;
+                cout << "Que desea editar?\n1. Editar\n2. Eliminar\n";
+                int opcion2;
+                cin >> opcion2;
+                switch (opcion2) {
+                    case 1:
+                        listaPreguntas[numPregunta]->editarPregunta();
+                        break;
+                    case 2:
+                        eliminarPregunta(numPregunta - 1);
+                        break;
+                    default:
+                        cout << "Opción inválida.\n";
+                        break;
+                }
+                break;
+            }
+            case 4:
+                agregarPregunta();
+            default:
+                cout << "Opción inválida.\n";
+                break;
+        }
     }
 }
+
 void Evaluacion::realizarEvaluacion(string rut, string alumno) {
     this->rut = rut;
     this->alumno = alumno;

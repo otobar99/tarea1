@@ -1,5 +1,4 @@
-30
-3
+ALTERNATIVA
 2023
 1
 ¿Cuál es el símbolo químico del carbono?
@@ -10,21 +9,21 @@ C
 Ca
 Co
 
-1
+CORTA
 2020
 1
 Describe qué es un enlace covalente.
 50
 7
 
-2
+VF
 2022
 2
 La molécula de agua tiene una forma angular.
 15
 3
 
-3
+ALTERNATIVA
 2023
 3
 ¿Qué tipo de compuesto es NaCl?
@@ -35,21 +34,21 @@ Orgánico
 Iónico
 Covalente
 
-1
+CORTA
 2019
 1
 Explica el concepto de pH.
 40
 8
 
-2
+VF
 2021
 2
 El oxígeno es un elemento esencial para la respiración celular.
 10
 3
 
-3
+ALTERNATIVA
 2020
 3
 ¿Cuál es la fórmula química del ácido sulfúrico?
@@ -60,21 +59,21 @@ H2SO4
 HCl
 NaOH
 
-1
+CORTA
 2022
 1
 Describe la diferencia entre un elemento y un compuesto.
 55
 9
 
-2
+VF
 2023
 2
 Los enlaces iónicos se forman por la transferencia de electrones.
 15
 3
 
-3
+ALTERNATIVA
 2021
 3
 ¿Cuál es la unidad de concentración molar?
@@ -85,21 +84,21 @@ Mol/L
 g/L
 mg/L
 
-1
+CORTA
 2020
 1
 Explica qué son los isotopos.
 60
 10
 
-2
+VF
 2022
 2
 Un catalizador acelera una reacción química sin consumirse.
 10
 2
 
-3
+ALTERNATIVA
 2023
 3
 ¿Cuál es la masa molar del agua (H2O)?
@@ -110,21 +109,21 @@ Un catalizador acelera una reacción química sin consumirse.
 36 g/mol
 54 g/mol
 
-1
+CORTA
 2019
 1
 Describe qué es una reacción exotérmica.
 50
 8
 
-2
+VF
 2020
 2
 El dióxido de carbono es un gas de efecto invernadero.
 10
 2
 
-3
+ALTERNATIVA
 2021
 3
 ¿Cuál es el nombre común del HCl?
@@ -135,21 +134,21 @@ El dióxido de carbono es un gas de efecto invernadero.
 Ácido sulfúrico
 Ácido nítrico
 
-1
+CORTA
 2020
 1
 Explica la diferencia entre disolución y suspensión.
 50
 7
 
-2
+VF
 2022
 2
 La sal común se forma por la reacción de un ácido y una base.
 10
 2
 
-3
+ALTERNATIVA
 2023
 3
 ¿Cuál es el número de electrones en el sodio (Na)?
@@ -160,21 +159,21 @@ La sal común se forma por la reacción de un ácido y una base.
 12
 23
 
-1
+CORTA
 2021
 1
 Describe qué es una base fuerte en química.
 55
 9
 
-2
+VF
 2020
 2
 El metano es un compuesto orgánico.
 10
 3
 
-3
+ALTERNATIVA
 2022
 3
 ¿Cuál es el compuesto químico de la glucosa?
@@ -185,16 +184,227 @@ C6H12O6
 C12H22O11
 CH4
 
-1
+CORTA
 2019
 1
 Explica qué ocurre en una reacción redox.
 60
 10
 
-2
+VF
 2023
 2
 Los hidrocarburos contienen únicamente carbono e hidrógeno.
 15
 3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es el símbolo químico del nitrógeno?
+20
+4
+3
+N
+Ni
+Ne
+
+CORTA
+2025
+1
+Describe qué es una reacción de síntesis.
+50
+8
+
+VF
+2025
+2
+El agua es un compuesto polar.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es la fórmula química del ácido acético?
+25
+5
+3
+CH3COOH
+C2H5OH
+HCOOH
+
+CORTA
+2025
+1
+Explica qué es una reacción de combustión.
+60
+10
+
+VF
+2025
+2
+El helio es un gas noble.
+10
+2
+
+ALTERNATIVA
+2025
+3
+¿Cuál es la fórmula química del ozono?
+30
+6
+3
+O3
+O2
+O
+
+CORTA
+2025
+1
+Describe qué es una solución saturada.
+55
+9
+
+VF
+2025
+2
+El oxígeno molecular es diatómico.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es el símbolo químico del fósforo?
+20
+4
+3
+P
+F
+Ph
+
+CORTA
+2025
+1
+Explica qué es una reacción de neutralización.
+50
+7
+
+VF
+2025
+2
+El dióxido de carbono es un gas incoloro.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es la fórmula química del amoníaco?
+25
+5
+3
+NH3
+NH4
+N2H4
+
+CORTA
+2025
+1
+Describe qué es un enlace metálico.
+60
+10
+
+VF
+2025
+2
+El hidrógeno es el elemento más ligero.
+10
+2
+
+ALTERNATIVA
+2025
+3
+¿Cuál es la fórmula química del etanol?
+30
+6
+3
+C2H5OH
+CH3OH
+C3H7OH
+
+CORTA
+2025
+1
+Explica qué es una reacción de desplazamiento.
+55
+9
+
+VF
+2025
+2
+El nitrógeno es el gas más abundante en la atmósfera.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es el símbolo químico del calcio?
+20
+4
+3
+Ca
+C
+Cl
+
+CORTA
+2025
+1
+Describe qué es una solución isotónica.
+50
+8
+
+VF
+2025
+2
+El oxígeno es necesario para la combustión.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es la fórmula química del dióxido de carbono?
+25
+5
+3
+CO2
+CO
+C2O4
+
+CORTA
+2025
+1
+Explica qué es una reacción de oxidación.
+60
+10
+
+VF
+2025
+2
+El cloro es un gas tóxico.
+10
+3
+
+ALTERNATIVA
+2025
+3
+¿Cuál es el símbolo químico del azufre?
+20
+4
+3
+S
+A
+Z

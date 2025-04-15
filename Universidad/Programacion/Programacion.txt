@@ -1,175 +1,224 @@
-30
-1
-2021
-1
-Describe qué es una variable en programación.
-30
-5
-
+ALTERNATIVA
+2024
 2
-2022
+¿Qué estructura de datos utiliza el principio FIFO?
+20
+4
 2
-Un bucle "while" se ejecuta mientras la condición sea verdadera.
-15
-3
+Cola
+Pila
 
-3
+CORTA
 2023
 3
-¿Cuál es el objetivo principal de un "if-else" en programación?
-25
-6
-3
-Tomar decisiones
-Definir variables
-Crear bucles
-
-1
-2020
-1
-Explica el concepto de "función" en programación.
-40
-8
-
-2
-2021
-2
-Un "array" es una estructura de datos que almacena elementos del mismo tipo.
-10
-2
-
-3
-2023
-3
-¿Cuál es el lenguaje más adecuado para desarrollo web?
-30
-7
-3
-Python
-HTML
-C++
-
-1
-2019
-1
-Describe qué es un "algoritmo".
+Describe qué es un algoritmo y su importancia en la programación.
 50
-9
-
-2
-2020
-2
-La programación orientada a objetos se basa en el uso de clases y objetos.
-20
-4
-
-3
-2022
-3
-¿Qué palabra clave se utiliza para declarar una variable en Python?
-20
-4
-3
-var
-let
-No necesita palabra clave
-
-1
-2023
-1
-Explica la diferencia entre "for" y "while".
-45
 7
 
-2
-2021
-2
-Un "stack" (pila) sigue la regla LIFO (Last In, First Out).
-15
-3
-
-3
-2020
-3
-¿Cuál es el operador lógico que representa "Y" en programación?
-30
-6
-3
-&&
-||
-!=
-
-1
+VF
 2022
 1
-Describe qué es una "base de datos relacional".
+Un bucle infinito puede causar que un programa deje de responder.
+10
+3
+
+ALTERNATIVA
+2025
+4
+¿Cuál es el propósito de un constructor en una clase?
+25
+5
+3
+Inicializar los atributos de un objeto
+Eliminar un objeto de la memoria
+Definir métodos estáticos
+
+CORTA
+2021
+5
+Explica cómo funciona la herencia en la programación orientada a objetos.
 60
 9
 
-2
+VF
 2020
-2
-El lenguaje SQL se utiliza para interactuar con bases de datos.
-10
-2
-
-3
-2023
-3
-¿Cuál es el resultado de 10 % 3 en programación?
-25
-5
-3
-1
-3
-0
-
-1
-2019
-1
-Explica el propósito de una estructura de control "switch".
-50
-7
-
-2
-2022
-2
-Los comentarios en Python comienzan con el carácter "#".
-10
-2
-
-3
-2023
-3
-¿Qué tipo de dato usarías para almacenar "verdadero" o "falso" en programación?
-20
-5
-3
-Boolean
-String
-Integer
-
-1
-2020
-1
-Describe cómo se gestiona la memoria dinámica en programación.
-55
-8
-
-2
-2022
-2
-Un "hashmap" asocia claves con valores.
+6
+La complejidad temporal O(n^2) es peor que O(n log n).
 15
 3
 
+ALTERNATIVA
+2023
 3
-2021
+¿Cuál es el resultado de 5 % 2 en programación?
+15
 3
-¿Qué representa "null" en programación?
+3
+1
+2
+0
+
+CORTA
+2024
+4
+Describe qué es un árbol binario de búsqueda y cómo funciona.
+55
+8
+
+VF
+2025
+2
+En programación, un puntero almacena la dirección de memoria de una variable.
+10
+2
+
+ALTERNATIVA
+2022
+6
+¿Cuál es la complejidad temporal del algoritmo de ordenamiento por burbuja en el peor caso?
 30
 6
 3
-Un error
-Una referencia vacía
-Una cadena de texto
+O(n^2)
+O(n log n)
+O(n)
+
+CORTA
+2023
+1
+Explica qué es una variable y cómo se utiliza en un programa.
+40
+6
+
+VF
+2024
+3
+Un método estático pertenece a la clase y no a una instancia de la clase.
+15
+3
+
+ALTERNATIVA
+2025
+5
+¿Cuál es el propósito de la palabra clave `virtual` en C++?
+25
+5
+4
+Permitir la sobrecarga de operadores
+Habilitar la herencia polimórfica
+Definir métodos abstractos
+Evitar la creación de objetos
+
+CORTA
+2021
+2
+Describe qué es un archivo binario y cómo se utiliza en programación.
+50
+7
+
+VF
+2020
+4
+El operador `&&` en C++ representa una operación lógica "AND".
+10
+3
+
+ALTERNATIVA
+2023
+3
+¿Cuál es el resultado de la operación lógica `true && false` en C++?
+15
+3
+2
+false
+true
+
+CORTA
+2022
+4
+Describe qué es un puntero inteligente y cómo se utiliza en C++.
+55
+8
+
+VF
+2021
+2
+En programación, un vector dinámico puede cambiar su tamaño durante la ejecución.
+10
+3
+
+ALTERNATIVA
+2024
+5
+¿Cuál es el propósito de la palabra clave `override` en C++?
+25
+5
+3
+Indicar que un método sobrescribe uno de la clase base
+Definir un método estático
+Evitar la creación de objetos
+
+CORTA
+2025
+6
+Explica cómo funciona el polimorfismo en la programación orientada a objetos.
+60
+10
+
+VF
+2020
+1
+Un archivo de texto almacena datos en formato binario.
+10
+2
+
+ALTERNATIVA
+2023
+4
+¿Cuál es la diferencia entre una lista enlazada y un vector?
+20
+4
+4
+Una lista enlazada tiene nodos conectados por punteros
+Un vector tiene tamaño fijo
+Una lista enlazada permite inserciones rápidas en cualquier posición
+Un vector es más eficiente en acceso aleatorio
+
+CORTA
+2021
+3
+Describe qué es una función recursiva y da un ejemplo de su uso.
+50
+7
+
+VF
+2024
+5
+El operador `||` en C++ representa una operación lógica "OR".
+15
+3
+
+ALTERNATIVA
+2025
+6
+¿Cuál es la complejidad espacial de un árbol binario balanceado?
+30
+6
+3
+O(n)
+O(log n)
+O(n^2)
+
+CORTA
+2022
+2
+Explica qué es un archivo JSON y cómo se utiliza en programación.
+40
+6
+
+VF
+2023
+3
+Un destructor en C++ se llama automáticamente cuando un objeto sale de alcance.
+10
+3

@@ -20,7 +20,7 @@ void P_VF::setJustificado(const string& justificado) {
 
 // Métodos específicos
 void P_VF::imprimirPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "Justificado: " << justificado << "\n";
 }
 
@@ -29,19 +29,19 @@ P_VF::~P_VF() {
 }
 
 void P_VF::mostrarPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Justificado: " << justificado << "\n";
 }
 
 void P_VF::leerPregunta(ifstream& archivo){
-    leerPregunta(archivo);
+    Pregunta::leerPregunta(archivo);
     string linea;
     getline(archivo, linea);
     setJustificado(linea);
 }
 
 void P_VF::revisarPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "¿Es correcta? (1: Sí, 0: No): ";
     int respuestaCorrecta;
     cin >> respuestaCorrecta;
@@ -53,7 +53,7 @@ void P_VF::revisarPregunta(){
 }
 
 void P_VF::responderPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Ingrese su respuesta (V/F): ";
     string respuestaUsuario;
     cin.ignore();
@@ -71,7 +71,7 @@ void P_VF::responderPregunta(){
 }
 
 void P_VF::editarPregunta(){
-    editarPregunta();
+    Pregunta::editarPregunta();
     switch (getTaxonomia()) {
         case 1:
             setTiempo(20);
@@ -95,7 +95,7 @@ void P_VF::editarPregunta(){
 }
 
 void P_VF::crearPregunta(){
-    crearPregunta();
+    Pregunta::crearPregunta();
     switch (getTaxonomia()) {
         case 1:
             setTiempo(20);
@@ -120,6 +120,7 @@ void P_VF::crearPregunta(){
 }
 
 void P_VF::buscarPregunta(const string& asignatura, int nivel) {
+    bool encontrado = false;
     ifstream archivo("Universidad/" + asignatura + "/" + asignatura + ".txt");
     if (!archivo.is_open()) {
         cout << "Error al abrir el archivo.\n";
@@ -128,8 +129,9 @@ void P_VF::buscarPregunta(const string& asignatura, int nivel) {
     string linea;
     while (getline(archivo, linea)) {
         try {
-            int tipo = stoi(linea);
-            if (tipo == 2) {
+            linea.erase(0, linea.find_first_not_of(" \t\r\n"));
+            linea.erase(linea.find_last_not_of(" \t\r\n") + 1);
+            if (linea == "VF") {
                 getline(archivo, linea);
                 if(2025 - stoi(linea) >= 2) {
                     getline(archivo, linea);
@@ -141,6 +143,7 @@ void P_VF::buscarPregunta(const string& asignatura, int nivel) {
                         setTiempo(stoi(linea));
                         getline(archivo, linea);
                         setPuntaje(stoi(linea));
+                        encontrado = true;
                         break;
                     }
                 }
@@ -152,5 +155,13 @@ void P_VF::buscarPregunta(const string& asignatura, int nivel) {
             continue;
         }
     }
+    if (!encontrado) {
+        setEnunciado(" ");
+    }
     archivo.close();
+}
+
+void P_VF::guardarPregunta(ofstream& archivo) {
+    Pregunta::guardarPregunta(archivo);
+    archivo << getJustificado() << "\n";
 }

@@ -38,6 +38,7 @@ int main() {
             Estudiante estudiante = Estudiante();
             estudiante.AsignarEstudiante(opcion,r,universidad.getAsignaturas(), universidad.getNAsignaturas());
         } else if(opcion == 2){
+            string ev;
             cout << "1. Profesor nuevo\n2. Profesor existente" << endl;
             cin >> opcion;
             cout << "Ingrese su rut: ";
@@ -51,20 +52,24 @@ int main() {
             int asignaturaIndex;
             cin >> asignaturaIndex;
             cout << "Que desea hacer?" << endl;
-            cout << "1. Crear evaluacion\n2. Revisar evaluacion\n3. Editar evaluacion" << endl;
-            cout << "4. Leer evaluacion" << endl;
+            cout << "1. Crear evaluacion\n2. Ver evaluacion\n3. Editar evaluacion\n" << endl;
             int accion;
             cin >> accion;
             Evaluacion evaluacion = Evaluacion();
             if (accion == 1){
                 evaluacion.crearEvaluacion(universidad.getAsignaturas()[asignaturaIndex-1], profesor.getNombre());
             } else if (accion == 2){
-                cout << "Ingrese el nombre de la evaluacion que desea revisar: " << endl;
+                cout << "Ingrese el nombre de la evaluacion que desea ver: " << endl;
+                cin.ignore();
+                getline(cin, r);
+                evaluacion.leerEvaluacion("Universidad/"+universidad.getAsignaturas()[asignaturaIndex-1]+"/"+r+".txt");
+                evaluacion.imprimirEvaluacion();
             } else if (accion == 3){
                 cout << "Ingrese el nombre de la evaluacion que desea editar: " << endl;
-            } else if (accion == 4) {
-                cout << "Leyendo evaluacion:" << endl;
-                evaluacion.leerEvaluacion();
+                cin.ignore();
+                getline(cin, r);
+                evaluacion.leerEvaluacion("Universidad/"+universidad.getAsignaturas()[asignaturaIndex-1]+"/"+r+".txt");
+                evaluacion.editarEvaluacion();
             }
         }
         cout << "Desea realizar otra accion?" << endl;

@@ -67,7 +67,7 @@ P_Alternativa::~P_Alternativa() {
 }
 
 void P_Alternativa::imprimirPregunta(){
-    imprimirPregunta();
+    Pregunta::imprimirPregunta();
     cout << "Alternativas:\n";
     for (int i = 0; i < cantidadAlternativas; ++i) {
         cout << i + 1 << ". " << alternativas[i] << "\n";
@@ -75,7 +75,7 @@ void P_Alternativa::imprimirPregunta(){
 }
 
 void P_Alternativa::mostrarPregunta(){
-    mostrarPregunta();
+    Pregunta::mostrarPregunta();
     cout << "Alternativas:\n";
     for (int i = 0; i < cantidadAlternativas; ++i) {
         cout << i + 1 << ". " << alternativas[i] << "\n";
@@ -83,7 +83,7 @@ void P_Alternativa::mostrarPregunta(){
 }
 
 void P_Alternativa::leerPregunta(ifstream& archivo){
-    leerPregunta(archivo);
+    Pregunta::leerPregunta(archivo);
     archivo >> cantidadAlternativas;
     delete[] alternativas;
     alternativas = new string[cantidadAlternativas];
@@ -192,13 +192,11 @@ void P_Alternativa::responderPregunta(){
 }
 
 void P_Alternativa::crearPregunta(){
-    crearPregunta();
+    Pregunta::crearPregunta();
     cout << "Ingrese la cantidad de alternativas: ";
-    int cantidadAlternativas;
     cin >> cantidadAlternativas;
     delete[] alternativas;
     alternativas = new string[cantidadAlternativas];
-    cantidadAlternativas = cantidadAlternativas;
     for (int i = 0; i < cantidadAlternativas; i++) {
         cout << "Ingrese la alternativa " << i + 1 << ": ";
         string alternativa;
@@ -230,6 +228,7 @@ void P_Alternativa::crearPregunta(){
 }
 
 void P_Alternativa::buscarPregunta(const string& asignatura, int nivel) {
+    bool encontrado = false;
     ifstream archivo("Universidad/" + asignatura + "/" + asignatura + ".txt");
     if (!archivo.is_open()) {
         cout << "Error al abrir el archivo.\n";
@@ -238,8 +237,9 @@ void P_Alternativa::buscarPregunta(const string& asignatura, int nivel) {
     string linea;
     while (getline(archivo, linea)) {
         try {
-            int tipo = stoi(linea);
-            if (tipo == 3) {
+            linea.erase(0, linea.find_first_not_of(" \t\r\n"));
+            linea.erase(linea.find_last_not_of(" \t\r\n") + 1);
+            if (linea == "ALTERNATIVA") {
                 getline(archivo, linea);
                 if(2025 - stoi(linea) >= 2) {
                     getline(archivo, linea);
@@ -258,6 +258,7 @@ void P_Alternativa::buscarPregunta(const string& asignatura, int nivel) {
                         for (int i = 0; i < this->cantidadAlternativas; i++) {
                             getline(archivo, alternativas[i]);
                         }
+                        encontrado = true;
                         break;
                     }
                 }
@@ -269,5 +270,17 @@ void P_Alternativa::buscarPregunta(const string& asignatura, int nivel) {
             continue;
         }
     }
+    if (!encontrado) {
+        setEnunciado(" ");
+    }
     archivo.close();
 }
+
+void P_Alternativa::guardarPregunta(ofstream& archivo) {
+    Pregunta::guardarPregunta(archivo);
+    archivo << cantidadAlternativas << "\n";
+    for (int i = 0; i < cantidadAlternativas; ++i) {
+        archivo << alternativas[i] << "\n";
+    }
+}
+

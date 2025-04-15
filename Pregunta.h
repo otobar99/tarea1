@@ -39,14 +39,15 @@ public:
     void setCorrecto(bool correcto);
 
     // Otros métodos
-    void imprimirPregunta();
-    void mostrarPregunta();
-    void leerPregunta(ifstream& archivo);
-    void revisarPregunta();
-    void editarPregunta();
-    void responderPregunta();
-    void crearPregunta();
-    void buscarPregunta(const string& asignatura, int nivel);
+    virtual void imprimirPregunta();
+    virtual void mostrarPregunta();
+    virtual void leerPregunta(ifstream& archivo);
+    virtual void revisarPregunta();
+    virtual void editarPregunta();
+    virtual void responderPregunta();
+    virtual void crearPregunta();
+    virtual void buscarPregunta(const string& asignatura, int nivel);
+    virtual void guardarPregunta(ofstream& archivo);
 
     // Destructor
     ~Pregunta();

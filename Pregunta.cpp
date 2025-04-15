@@ -149,13 +149,14 @@ void Pregunta::responderPregunta(){
 
 void Pregunta::leerPregunta(ifstream& archivo){
     string linea;
-    int tax;
+    getline(archivo, linea);
+    setTaxonomia(stoi(linea));
     getline(archivo, linea);
     setEnunciado(linea);
     getline(archivo, linea);
-    setPuntaje(stoi(linea));
+    setTiempo(stoi(linea));
     getline(archivo, linea);
-    setTaxonomia(stoi(linea));
+    setPuntaje(stoi(linea));
     getline(archivo, linea);
     setRespuesta(linea);
     return;
@@ -197,6 +198,7 @@ void Pregunta::crearPregunta(){
 }
 
 void Pregunta::buscarPregunta(const string& asignatura, int nivel) {
+    bool encontrado = false;
     ifstream archivo("Universidad/" + asignatura + "/" + asignatura + ".txt");
     if (!archivo.is_open()) {
         cout << "Error al abrir el archivo.\n";
@@ -205,8 +207,9 @@ void Pregunta::buscarPregunta(const string& asignatura, int nivel) {
     string linea;
     while (getline(archivo, linea)) {
         try {
-            int tipo = stoi(linea);
-            if (tipo == 3) {
+            linea.erase(0, linea.find_first_not_of(" \t\r\n"));
+            linea.erase(linea.find_last_not_of(" \t\r\n") + 1);
+            if (linea == "CORTA") {
                 getline(archivo, linea);
                 if(2025 - stoi(linea) >= 2) {
                     getline(archivo, linea);
@@ -218,6 +221,7 @@ void Pregunta::buscarPregunta(const string& asignatura, int nivel) {
                         setTiempo(stoi(linea));
                         getline(archivo, linea);
                         setPuntaje(stoi(linea));
+                        encontrado = true;
                         break;
                     }
                 }
@@ -229,5 +233,17 @@ void Pregunta::buscarPregunta(const string& asignatura, int nivel) {
             continue;
         }
     }
+    if (!encontrado) {
+        setEnunciado(" ");
+    }
     archivo.close();
+}
+
+void Pregunta::guardarPregunta(ofstream& archivo){
+    archivo << taxonomia << "\n";
+    archivo << enunciado << "\n";
+    archivo << tiempo << "\n";
+    archivo << puntaje << "\n";
+    archivo << respuesta << "\n";
+    return;
 }

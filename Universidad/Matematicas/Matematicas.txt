@@ -1,247 +1,249 @@
-30
-3
+ALTERNATIVA
 2023
 2
-¿Cuál es el resultado de 3x + 2 = 8?
-30
-5
-3
-x = 2
-x = 3
-x = 5
-
-1
-2022
-1
-Define la propiedad distributiva de la multiplicación.
-45
-7
-
-2
-2021
-2
-La raíz cuadrada de 16 es un número par.
+¿Cuál es la unidad de medida de la fuerza en el Sistema Internacional?
 15
 3
+3
+Newton
+Joule
+Pascal
 
+CORTA
+2024
 3
-2020
-3
-¿Cuál es el producto de (x+2)(x-2)?
-30
-5
-3
-x^2 - 4
-x^2 + 4
-x^2 - 2
-
-1
-2023
-1
-Explica qué es un número racional.
+Explica qué es la velocidad y cómo se diferencia de la rapidez.
 50
-8
-
-2
-2020
-2
-Un número primo tiene exactamente dos divisores.
-20
-4
-
-3
-2021
-3
-¿Cuál es la derivada de f(x) = x^2 + 3x?
-40
-6
-3
-f'(x) = 2x + 3
-f'(x) = x^3
-f'(x) = 2x - 3
-
-1
-2022
-1
-¿Qué representa el símbolo ∑ en matemáticas?
-45
 7
 
-2
-2023
-2
-El perímetro de un círculo se calcula con la fórmula 2πr.
-25
-4
-
-3
-2019
-3
-¿Cuál es el área de un triángulo con base 6 cm y altura 4 cm?
-35
-6
-3
-12 cm²
-24 cm²
-18 cm²
-
-1
-2020
-1
-Describe el concepto de número irracional.
-50
-8
-
-2
+VF
 2022
-2
-Pi (π) es un número racional.
-20
-3
-
-3
-2023
-3
-¿Cuántos lados tiene un decágono?
-15
-5
-3
-8
+1
+La aceleración de un objeto en caída libre cerca de la superficie de la Tierra es aproximadamente 9.8 m/s².
 10
-12
+3
 
-1
+ALTERNATIVA
+2025
+4
+¿Cuál es la fórmula de la energía cinética?
+20
+4
+2
+(1/2)mv²
+mgh
+F * d
+
+CORTA
 2021
-1
-Explica el teorema de Pitágoras.
+5
+Describe el principio de conservación de la energía y da un ejemplo.
 60
 9
 
-2
+VF
 2020
-2
-Un cuadrado tiene todos sus lados iguales.
-10
-2
-
+6
+La tercera ley de Newton establece que a toda acción corresponde una reacción de igual magnitud y dirección opuesta.
+15
 3
+
+ALTERNATIVA
 2023
 3
-¿Cuál es el valor de log10(100)?
-25
-4
+¿Cuál es la velocidad de la luz en el vacío?
+15
 3
-1
-2
 3
+3 × 10^8 m/s
+3 × 10^6 m/s
+3 × 10^5 m/s
 
-3
-2021
-3
-¿Cuál es la suma de los primeros 10 números naturales?
-20
-5
-3
-45
+CORTA
+2024
+4
+Explica qué es el trabajo mecánico y cómo se calcula.
 55
-65
-
-1
-2020
-1
-Define un número perfecto en matemáticas.
-40
 8
 
+VF
+2025
 2
-2022
-2
-Cualquier número multiplicado por cero es igual a cero.
+La presión es directamente proporcional a la fuerza aplicada e inversamente proporcional al área.
 10
 2
 
-3
-2023
-3
-¿Cuál es el resultado de 5! (5 factorial)?
+ALTERNATIVA
+2022
+6
+¿Cuál es la fórmula de la ley de Ohm?
 30
 6
 3
-120
-60
-24
+V = IR
+P = IV
+F = ma
 
+CORTA
+2023
 1
-2019
-1
-Explica la diferencia entre múltiplo y divisor.
-45
+Describe qué es la energía potencial gravitatoria y cómo se calcula.
+40
+6
+
+VF
+2024
+3
+El momento lineal de un objeto es el producto de su masa por su velocidad.
+15
+3
+
+ALTERNATIVA
+2025
+5
+¿Cuál es la fórmula de la frecuencia en términos del período?
+25
+5
+3
+f = 1/T
+f = T
+f = 2π/T
+
+CORTA
+2021
+2
+Explica qué es la ley de Coulomb y cómo se aplica.
+50
 7
 
-2
-2021
-2
-La suma de los ángulos internos de un triángulo es 180 grados.
-15
-3
-
-3
-2023
-3
-¿Cuál es el área de un círculo con radio 5 cm?
-35
-6
-3
-25π cm²
-50π cm²
-75π cm²
-
-1
+VF
 2020
-1
-Describe cómo resolver una ecuación cuadrática.
-60
-9
-
-2
-2022
-2
-Un trapecio tiene dos lados paralelos.
-20
 4
+La energía no se crea ni se destruye, solo se transforma.
+10
+3
 
+ALTERNATIVA
+2024
 3
-2021
-3
-¿Cuál es el valor aproximado de π?
+¿Cuál es la unidad de medida de la energía en el Sistema Internacional?
 15
 3
 3
-3.1416
-2.7183
-1.6180
+Joule
+Newton
+Watt
 
-1
+CORTA
 2023
-1
-Explica qué es una función lineal.
+4
+Explica qué es la inercia y cómo se relaciona con la masa.
 50
 8
 
+VF
+2025
 2
+La velocidad es una magnitud vectorial.
+10
+3
+
+ALTERNATIVA
+2022
+5
+¿Cuál es la fórmula de la segunda ley de Newton?
+25
+5
+3
+F = ma
+F = mv
+F = mgh
+
+CORTA
+2021
+6
+Describe cómo se calcula la fuerza centrípeta y da un ejemplo.
+60
+10
+
+VF
 2020
+1
+La energía cinética de un objeto depende de su masa y su velocidad.
+10
 2
-Un polígono regular tiene todos sus lados iguales.
+
+ALTERNATIVA
+2023
+4
+¿Cuál es el valor aproximado de la constante gravitacional G?
+20
+4
+3
+6.67 × 10^-11 N·m²/kg²
+9.8 m/s²
+3 × 10^8 m/s
+
+CORTA
+2024
+5
+Explica qué es el momento angular y cómo se conserva.
+55
+9
+
+VF
+2025
+3
+El trabajo realizado por una fuerza constante es igual al producto de la fuerza por la distancia recorrida en su dirección.
 15
 3
 
+ALTERNATIVA
+2022
+6
+¿Cuál es la fórmula de la energía potencial elástica?
+30
+6
 3
+(1/2)kx²
+mgh
+F * d
+
+CORTA
+2023
+2
+Describe qué es un sistema aislado en términos de conservación de energía.
+50
+7
+
+VF
+2024
+4
+La presión en un fluido aumenta con la profundidad.
+10
+3
+
+ALTERNATIVA
+2025
+5
+¿Cuál es la fórmula de la velocidad angular?
+25
+5
+3
+ω = θ/t
+ω = v/r
+ω = 2πf
+
+CORTA
 2021
 3
-¿Cuál es el tercer término de la sucesión de Fibonacci?
-25
-4
-3
-1
+Explica qué es un circuito eléctrico y cómo se calcula la resistencia equivalente en serie.
+50
+8
+
+VF
+2020
 2
+La fuerza de fricción siempre se opone al movimiento relativo entre dos superficies.
+10
 3
